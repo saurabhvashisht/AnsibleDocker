@@ -1,0 +1,18 @@
+---
+
+jenkins_network: 'jenkins'
+
+jenkins_image: 'jenkins/jenkins:alpine'
+jenkins_container_name: 'jenkins'
+
+jenkins_data_container_name: 'jenkins-data'
+
+jenkins_published_ports:
+  - 8081:8080
+  - 50000:50000
+
+jenkins_log_driver: json-file
+jenkins_log_options:
+  labels: jenkins
+
+jenkins_restart_policy: 'on-failure'

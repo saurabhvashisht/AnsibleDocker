@@ -1,0 +1,10 @@
+Inventory File name : inventory  (this only contains localhost right now but can be modified to envinrment)
+Ansible Roles directory : roles (this contains two roles 'prepare' & 'Jenkins')
+INFO about Roles : 
+
+     prepare: This role only installs docker on debian and configures it
+     Jenkins: This role is using docker to initialise the Jenkins container on 8081 gest port as 
+              requested 
+
+     USAGE: run the command 
+            ansible-playbook start.yml
